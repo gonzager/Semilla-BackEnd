@@ -39,7 +39,7 @@ export class ContactosController {
   })
   @ApiResponse({
     status: 404,
-    description: 'Contacto no encontrado',
+    description: 'No encontrado',
   })
   findOne(@Param('id') id: string) {
     return this.contactosService.findOne(+id);
